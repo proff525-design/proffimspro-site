@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProffimsPro — отопление, водоснабжение, электропроводка</title>
+  <meta name="description" content="YouTube-канал ProffimsPro: отопление, водоснабжение и электропроводка из личного опыта. Схемы, монтаж, диагностика и лайфхаки для дома.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <span class="logo__icon">🔥</span>
+        <span class="logo__text">Proffims<b>Pro</b></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#videos" class="nav__link">Видео</a>
+        <a href="#projects" class="nav__link">Разделы</a>
+        <a href="#about" class="nav__link">О канале</a>
+        <a href="#contact" class="nav__link">Связь</a>
+      </nav>
+
+      <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="btn btn--primary header__cta">
+        Подписаться
+      </a>
+
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="dot"></span> YouTube-канал · 9 400+ подписчиков
+          </div>
+          <h1 class="hero__title">
+            Отопление, вода и свет —<br>
+            <span class="accent">без лишних сказок</span>
+          </h1>
+          <p class="hero__subtitle">
+            ProffimsPro — монтаж и ремонт инженерных систем из личного опыта:
+            отопление, водоснабжение и электропроводка. Только то, что проверено на реальных объектах.
+          </p>
+          <div class="hero__actions">
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.5 15.6V8.4L15.8 12l-6.3 3.6z"/></svg>
+              Смотреть на YouTube
+            </a>
+            <a href="#projects" class="btn btn--ghost btn--lg">Разделы канала</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__num" data-count="9400">0</span>
+              <span class="stat__label">подписчиков</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="3">0</span>
+              <span class="stat__label">направления</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num" data-count="100">0</span>
+              <span class="stat__suffix">%</span>
+              <span class="stat__label">личный опыт</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__card-glow" aria-hidden="true"></div>
+          <div class="device">
+            <div class="device__head">
+              <span class="device__led"></span>
+              <span class="device__name">СИСТЕМА ДОМА</span>
+            </div>
+            <div class="device__circuit">
+              <div class="circuit-row"><i class="c-heat"></i>Отопление · котёл и контуры</div>
+              <div class="circuit-row"><i class="c-water"></i>Вода · разводка и фильтры</div>
+              <div class="circuit-row"><i class="c-power"></i>Свет · щиток и проводка</div>
+            </div>
+            <div class="device__bar"><i></i></div>
+            <div class="device__foot">
+              <span>Объекты: частный дом</span>
+              <span class="device__power">из опыта</span>
+            </div>
+          </div>
+          <p class="hero__card-caption">Три опоры канала — монтаж, диагностика, ремонт</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Свежие <span class="accent">видео</span></h2>
+          <p class="section__desc">С монтажных площадок и рабочих объектов — как есть.</p>
+        </div>
+
+        <div class="videos reveal">
+          <div class="videos__main">
+            <a class="player player--link" href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener">
+              <div class="player__poster">
+                <span class="player__play">▶</span>
+                <span class="player__tag">Лента канала</span>
+              </div>
+            </a>
+            <h3 class="videos__title">Все ролики — на канале ProffimsPro</h3>
+            <p class="videos__meta">Монтаж · диагностика · ошибки, которых стоит избегать</p>
+          </div>
+
+          <div class="videos__list">
+            <a class="vcard" href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener">
+              <div class="vcard__thumb vcard__thumb--heat"><span class="vcard__play">▶</span></div>
+              <div class="vcard__body">
+                <h4>Отопление: контуры и балансировка</h4>
+                <span>Котёл · тёплый пол · радиаторы</span>
+              </div>
+            </a>
+            <a class="vcard" href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener">
+              <div class="vcard__thumb vcard__thumb--water"><span class="vcard__play">▶</span></div>
+              <div class="vcard__body">
+                <h4>Водоснабжение: разводка без течей</h4>
+                <span>Трубы · фильтры · арматура</span>
+              </div>
+            </a>
+            <a class="vcard" href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener">
+              <div class="vcard__thumb vcard__thumb--power"><span class="vcard__play">▶</span></div>
+              <div class="vcard__body">
+                <h4>Электропроводка: щит и безопасность</h4>
+                <span>Автоматы · УЗО · кабели</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Разделы <span class="accent">канала</span></h2>
+          <p class="section__desc">Практические материалы по трём направлениям инженерии дома.</p>
+        </div>
+
+        <div class="filters reveal" id="filters">
+          <button class="filter is-active" data-filter="all">Все</button>
+          <button class="filter" data-filter="heat">Отопление</button>
+          <button class="filter" data-filter="water">Водоснабжение</button>
+          <button class="filter" data-filter="power">Электрика</button>
+        </div>
+
+        <div class="grid" id="projectGrid">
+
+          <article class="card reveal" data-category="heat">
+            <div class="card__top">
+              <span class="card__cat card__cat--heat">Отопление</span>
+              <span class="card__level card__level--2">Средний</span>
+            </div>
+            <div class="card__icon">🔥</div>
+            <h3 class="card__title">Монтаж отопления дома</h3>
+            <p class="card__desc">Котёл, коллектор, контуры: схема, порядок работ и типичные ошибки при сборке системы.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть разбор →</a>
+          </article>
+
+          <article class="card reveal" data-category="heat">
+            <div class="card__top">
+              <span class="card__cat card__cat--heat">Отопление</span>
+              <span class="card__level card__level--1">Лёгкий</span>
+            </div>
+            <div class="card__icon">🌡️</div>
+            <h3 class="card__title">Тёплый пол своими руками</h3>
+            <p class="card__desc">Укладка контура, петлевики, подключение к коллектору и запуск системы без сюрпризов.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть →</a>
+          </article>
+
+          <article class="card reveal" data-category="heat">
+            <div class="card__top">
+              <span class="card__cat card__cat--heat">Отопление</span>
+              <span class="card__level card__level--2">Средний</span>
+            </div>
+            <div class="card__icon">⚙️</div>
+            <h3 class="card__title">Диагностика и балансировка</h3>
+            <p class="card__desc">Холодные радиаторы, шум в системе, завоздушивание — как найти причину и устранить.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть →</a>
+          </article>
+
+          <article class="card reveal" data-category="water">
+            <div class="card__top">
+              <span class="card__cat card__cat--water">Водоснабжение</span>
+              <span class="card__level card__level--2">Средний</span>
+            </div>
+            <div class="card__icon">🚰</div>
+            <h3 class="card__title">Разводка воды в доме</h3>
+            <p class="card__desc">Правильная схема разводки, выбор труб и арматуры, опрессовка перед сдачей.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть разбор →</a>
+          </article>
+
+          <article class="card reveal" data-category="water">
+            <div class="card__top">
+              <span class="card__cat card__cat--water">Водоснабжение</span>
+              <span class="card__level card__level--1">Лёгкий</span>
+            </div>
+            <div class="card__icon">💧</div>
+            <h3 class="card__title">Фильтры и водоподготовка</h3>
+            <p class="card__desc">Грубая и тонкая очистка, промывка, замена картриджей — базовый узел для чистой воды.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть →</a>
+          </article>
+
+          <article class="card reveal" data-category="water">
+            <div class="card__top">
+              <span class="card__cat card__cat--water">Водоснабжение</span>
+              <span class="card__level card__level--3">Сложный</span>
+            </div>
+            <div class="card__icon">🔧</div>
+            <h3 class="card__title">Устранение течей</h3>
+            <p class="card__desc">Реальные случаи протечек: стыки, скрытые места, временные и капитальные ремонты.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть →</a>
+          </article>
+
+          <article class="card reveal" data-category="power">
+            <div class="card__top">
+              <span class="card__cat card__cat--power">Электрика</span>
+              <span class="card__level card__level--3">Сложный</span>
+            </div>
+            <div class="card__icon">⚡</div>
+            <h3 class="card__title">Сборка электрощита</h3>
+            <p class="card__desc">Группы, автоматы, УЗО и дифавтоматы: безопасная сборка щита для частного дома.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть схему →</a>
+          </article>
+
+          <article class="card reveal" data-category="power">
+            <div class="card__top">
+              <span class="card__cat card__cat--power">Электрика</span>
+              <span class="card__level card__level--2">Средний</span>
+            </div>
+            <div class="card__icon">💡</div>
+            <h3 class="card__title">Электропроводка в доме</h3>
+            <p class="card__desc">Разводка кабелей, розеточные группы, освещение и штробление без хаоса.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть →</a>
+          </article>
+
+          <article class="card reveal" data-category="power">
+            <div class="card__top">
+              <span class="card__cat card__cat--power">Электрика</span>
+              <span class="card__level card__level--1">Лёгкий</span>
+            </div>
+            <div class="card__icon">🔌</div>
+            <h3 class="card__title">Диагностика проводки</h3>
+            <p class="card__desc">Обрыв, короткое замыкание, плохой контакт: поиск неисправности мультиметром.</p>
+            <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="card__link">Смотреть →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about reveal">
+        <div class="about__text">
+          <h2 class="section__title">О <span class="accent">канале</span></h2>
+          <p>
+            Приветствую, друзья! На моём канале — видео исключительно из историй,
+            происходящих из личного опыта. Отопление, водоснабжение и электропроводка:
+            как монтировал, как чинил, где ошибался.
+          </p>
+          <p>
+            Без рекламы «идеальных решений» из интернета — только практика с объектов.
+            Показываю схемы, материалы и порядок работ так, как делаю сам.
+          </p>
+          <ul class="about__list">
+            <li>Монтаж инженерных систем от и до</li>
+            <li>Диагностика поломок на реальных объектах</li>
+            <li>Схемы и списки материалов под каждый случай</li>
+          </ul>
+        </div>
+        <div class="about__panel">
+          <div class="about__panel-row"><span>Формат</span><b>Видео из опыта</b></div>
+          <div class="about__panel-row"><span>Темы</span><b>Отопление · вода · электрика</b></div>
+          <div class="about__panel-row"><span>Язык</span><b>Русский</b></div>
+          <div class="about__panel-row"><span>Подписчиков</span><b>9 400+</b></div>
+          <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="btn btn--primary about__btn">
+            Перейти на канал
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+      <div class="container contact reveal">
+        <h2 class="section__title">Связь и <span class="accent">сотрудничество</span></h2>
+        <p class="section__desc">Вопросы по проектам и предложения — через YouTube.</p>
+        <div class="contact__row">
+          <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="contact__item">
+            <span class="contact__icon">▶</span>
+            <span><b>YouTube</b><small>Комментарии и сообщения</small></span>
+          </a>
+          <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="contact__item">
+            <span class="contact__icon">✉</span>
+            <span><b>Написать автору</b><small>Контакты в описании канала</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--sm">
+        <span class="logo__icon">🔥</span>
+        <span class="logo__text">Proffims<b>Pro</b></span>
+      </a>
+      <p>Неофициальный сайт-витрина канала · © 2026</p>
+      <a href="https://www.youtube.com/@proffimspro" target="_blank" rel="noopener" class="footer__link">youtube.com/@proffimspro</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

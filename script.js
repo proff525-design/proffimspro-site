@@ -34,7 +34,6 @@ filters.forEach((btn) => {
 });
 
 const animateCounter = (el) => {
-  const target = +el.dataset.count;
   const duration = 1400;
   const start = performance.now();
   const format = (n) => n.toLocaleString("ru-RU");
@@ -42,8 +41,9 @@ const animateCounter = (el) => {
   const tick = (now) => {
     const p = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - p, 3);
-    el.textContent = format(Math.round(target * eased));
+    el.textContent = format(Math.round(+el.dataset.count * eased));
     if (p < 1) requestAnimationFrame(tick);
+    else el.dataset.animated = "1";
   };
   requestAnimationFrame(tick);
 };
@@ -71,3 +71,23 @@ document.querySelectorAll(".reveal").forEach((el, i) => {
   el.style.transitionDelay = `${Math.min(i % 3, 2) * 80}ms`;
   revealObserver.observe(el);
 });
+
+const formatSubs = (n) => n.toLocaleString("ru-RU");
+
+const applySubscribers = (n) => {
+  document.querySelectorAll("[data-subs-text]").forEach((el) => {
+    el.textContent = formatSubs(n);
+  });
+  document.querySelectorAll("[data-subs-count]").forEach((el) => {
+    el.dataset.count = String(n);
+    if (el.dataset.animated === "1") el.textContent = formatSubs(n);
+  });
+};
+
+fetch("/api/subscribers", { headers: { accept: "application/json" } })
+  .then((res) => (res.ok ? res.json() : null))
+  .then((data) => {
+    const n = data && +data.subscribers;
+    if (n > 0) applySubscribers(n);
+  })
+  .catch(() => {});
